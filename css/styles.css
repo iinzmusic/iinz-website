@@ -59,7 +59,7 @@ ul { list-style: none; }
 .nav-logo {
   font-family: var(--hero-font);
   font-weight: 800;
-  font-size: 1.25rem;
+  font-size: 1.75rem;
   color: var(--text);
   letter-spacing: 0.02em;
   position: absolute;
@@ -76,7 +76,7 @@ ul { list-style: none; }
   font-size: 0.75rem;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: rgba(245, 242, 238, 0.75);
+  color: rgba(245, 242, 238, 0.9);
   transition: color 0.2s;
 }
 
@@ -90,7 +90,7 @@ ul { list-style: none; }
 }
 
 .nav-social a {
-  color: rgba(245, 242, 238, 0.75);
+  color: rgba(245, 242, 238, 0.9);
   font-size: 0.9rem;
   transition: color 0.2s;
 }
