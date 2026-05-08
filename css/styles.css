@@ -41,14 +41,12 @@ ul { list-style: none; }
   align-items: center;
   justify-content: space-between;
   padding: 24px 48px;
+  background: transparent;
+  transition: background 0.3s;
 }
 
-.nav::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: rgba(10,10,10,0.85);
-  pointer-events: none;
+.nav--scrolled {
+  background: rgba(10,10,10,0.92);
 }
 
 .nav-logo {
