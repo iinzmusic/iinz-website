@@ -197,6 +197,7 @@ ul { list-style: none; }
 
 .singles-grid {
   display: flex;
+  justify-content: center;
   gap: clamp(16px, 3vw, 28px);
   overflow-x: auto;
   scroll-snap-type: x mandatory;
@@ -376,7 +377,7 @@ ul { list-style: none; }
   .nav { padding: 20px 24px; }
   .hero-content { padding: 0 24px clamp(40px, 10vw, 72px); }
   .scroll-hint { right: 24px; }
-  .singles-grid { grid-template-columns: 1fr; max-width: 360px; }
+  .singles-grid { grid-template-columns: 1fr; max-width: 360px; justify-content: flex-start; }
   .about-inner { grid-template-columns: 1fr; }
   .about-photo-wrap { aspect-ratio: 4/3; }
 }
