@@ -62,20 +62,21 @@ ul { list-style: none; }
   font-size: 1.25rem;
   color: var(--text);
   letter-spacing: 0.02em;
-  position: relative;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .nav-links {
   display: flex;
   gap: 36px;
-  position: relative;
 }
 
 .nav-links a {
   font-size: 0.75rem;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: var(--muted);
+  color: rgba(245, 242, 238, 0.75);
   transition: color 0.2s;
 }
 
@@ -85,12 +86,12 @@ ul { list-style: none; }
   display: flex;
   gap: 18px;
   align-items: center;
-  position: relative;
+  margin-left: auto;
 }
 
 .nav-social a {
-  color: var(--muted);
-  font-size: 0.85rem;
+  color: rgba(245, 242, 238, 0.75);
+  font-size: 0.9rem;
   transition: color 0.2s;
 }
 
