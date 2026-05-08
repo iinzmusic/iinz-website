@@ -76,7 +76,7 @@ ul { list-style: none; }
   font-size: 0.75rem;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: rgba(245, 242, 238, 0.9);
+  color: var(--text);
   transition: color 0.2s;
 }
 
@@ -90,7 +90,7 @@ ul { list-style: none; }
 }
 
 .nav-social a {
-  color: rgba(245, 242, 238, 0.9);
+  color: var(--text);
   font-size: 1.2rem;
   transition: color 0.2s;
 }
