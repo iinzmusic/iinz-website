@@ -12,7 +12,8 @@
       "Bash(ls ~/.ssh/*.pub 2>/dev/null && echo \"SSH keys found\" || echo \"No SSH keys\")",
       "Bash(ssh-keygen -t ed25519 -C \"hello@iinzmusic.com\" -f ~/.ssh/id_ed25519 -N \"\")",
       "Bash(ssh -T git@github.com)",
-      "Bash(ssh-keyscan github.com >> ~/.ssh/known_hosts 2>/dev/null && git push -u origin main)"
+      "Bash(ssh-keyscan github.com >> ~/.ssh/known_hosts 2>/dev/null && git push -u origin main)",
+      "Bash(git config *)"
     ]
   }
 }
