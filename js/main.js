@@ -30,3 +30,23 @@ function closeMenu() {
 hamburger.addEventListener('click', openMenu);
 mobileClose.addEventListener('click', closeMenu);
 mobileLinks.forEach(link => link.addEventListener('click', closeMenu));
+
+// favicon using Syne font
+document.fonts.ready.then(() => {
+  const size = 128;
+  const canvas = document.createElement('canvas');
+  canvas.width = size;
+  canvas.height = size;
+  const ctx = canvas.getContext('2d');
+  ctx.fillStyle = '#0a0a0a';
+  ctx.fillRect(0, 0, size, size);
+  ctx.fillStyle = '#f5f2ee';
+  ctx.font = '800 72px Syne';
+  ctx.textAlign = 'center';
+  ctx.textBaseline = 'middle';
+  ctx.fillText('ii', size / 2, size / 2 + 4);
+  const link = document.querySelector("link[rel='icon']") || document.createElement('link');
+  link.rel = 'icon';
+  link.href = canvas.toDataURL('image/png');
+  document.head.appendChild(link);
+});
